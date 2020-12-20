@@ -1,0 +1,54 @@
+ body {
+            height: 1500px;
+            /*出现滚动条*/
+        }
+
+        .nav {
+            cursor: pointer;
+            /*鼠标样式*/
+            position: fixed;
+            /*固定定位*/
+            left: 300px;
+        }
+
+        .nav li {
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: yellow;
+        }
+
+
+        .nav>ul>li {
+            float: left;
+            /*浮动*/
+            position: relative;
+            /*相对定位*/
+        }
+
+        .nav>ul>li ul {
+            display: none;
+            /*隐藏消失*/
+            position: absolute;
+            /*绝对定位*/
+            left: 0;
+            top: 40px;
+            padding-top: 10px;
+            /*空白间隙*/
+        }
+
+        /* 状态样式 */
+
+        .nav li:hover {
+            background: gray;
+        }
+
+        .nav>ul>li:hover ul {
+            display: block;
+        }
+
+        .nav li:hover>a {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
